@@ -1,0 +1,87 @@
+#game {
+    display: grid;
+    grid-template-columns: [a] 1fr [b] 1fr [c]; 
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    height: 100%;
+    align-items: center;
+}
+
+#player1 {
+    display: flex;
+    grid-column: a/b;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(228, 228, 228);
+    height: 100%;
+}
+
+#player2 {
+  display: flex;
+  grid-column: b/c;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+}
+
+#roll-number{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 10%;
+  transform: translate(-50%,-50%);
+}
+
+#roll{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  border: none;
+  background-color: none;
+  font-size: large;
+}
+
+#hold{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  border: none;
+  background-color: none;
+  font-size: large;
+}
+
+#newgame{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  border: none;
+  font-size: large;
+}
+
+#playeur{
+  margin-top: 20%;
+  font-size: 200%;
+}
+
+#player1Round, #player2Round{
+  font-size: 300%;
+  color: rgb(255, 59, 59);
+}
+
+#player1Global, #player2Global{
+  margin-top: 20%;
+  text-align: center;
+  background-color: rgb(255, 59, 59);
+  width: 20%;
+  height: 10%;
+}
